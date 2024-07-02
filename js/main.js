@@ -30,9 +30,21 @@ function handleOver(e) {
     console.log("Dragged Over")
 }
 
-function handleDrop() {
-    this.appendChild(draggedPiece);
+function handleDrop(e) {
+    e.preventDefault();
+    
+    if (this.children.length == 0) {
+        this.appendChild(draggedPiece);
+    } 
+    
+    else {
+        console.log("There is already a piece in this drop zone.");
+    }
 }
+
+/*function handleDrop() {
+    this.appendChild(draggedPiece);
+} */
 
 //eventListeners
 theButtons.forEach(button => button.addEventListener("click", changeBGImage));
