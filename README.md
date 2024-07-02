@@ -1,5 +1,5 @@
-# Super Fun Puzzle Game
-This is a drag and drop puzzle game. The user can select multiple puzzles to play.
+# Puzzle Game
+This is a drag'n drop puzzle game. The user can select multiple puzzles to play.
 ## Installation
 No installation required. Simply download the files
 ## Usage
